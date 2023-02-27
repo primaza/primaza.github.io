@@ -1,0 +1,47 @@
+<h1 id="primaza">Primaza</h1>
+<h2 id="multi-cluster-service-consumption-framework">Multi Cluster Service Consumption Framework</h2>
+<h3 id="the-problem">The Problem</h3>
+<ul>
+<li>Modern application stacks are increasingly complex</li>
+<li>Managing connections to all your supporting Services becomes more and more challenging… and that’s before you introduce additional clouds and hybrid environments</li>
+<li>No platform enables easy consumption of hybrid cloud services</li>
+<li>Needed to provide Scalability, Security and Portability</li>
+<li>Previous solutions (OSBAPI, Service Binding, etc.) gained moderate traction
+<ul>
+<li>Replace one complexity with another</li>
+<li>Heavyweight, onerous, exacting implementations</li>
+</ul></li>
+<li>Customers are left to implement ad-hoc solutions</li>
+<li>Manual steps to provision and consume cloud service (not scalable)</li>
+<li>Custom IaC to provide the scale required (boilerplate imperative code)</li>
+<li>Too much time spent on non-value added activities</li>
+</ul>
+<h3 id="the-solution">The Solution</h3>
+<ul>
+<li>An automatically collated Catalog that appropriately exposes available Services to Applications</li>
+<li>Leverages industry best practices to securely deliver service endpoint data to applications</li>
+<li>A platform that enables hybrid cloud services consumption in a portable, secured and scalable way</li>
+</ul>
+<h3 id="benefits-to-service-providers">Benefits to Service Providers</h3>
+<ul>
+<li>No action required!</li>
+<li>Continue to focus on delivering their cloud service with well-defined APIs</li>
+<li>Continue to work with Service Kubernetes APIs and Controllers</li>
+</ul>
+<h3 id="benefits-to-administrators">Benefits to Administrators</h3>
+<ul>
+<li>Automatic addition of services to the catalog (via Service Class) - manual catalog management still possible (via Registered Service)</li>
+<li>Service Classes are easy to create, and can be built by the service provider, administrators, or third-parties</li>
+<li>Popular Service Classes delivered by Primaza out of the box</li>
+</ul>
+<h3 id="benefits-to-developer">Benefits to Developer</h3>
+<ul>
+<li>Service Catalog makes it easy to discover new services and see what is available in the environment</li>
+<li>Developers can automatically and easily claim services from the catalog</li>
+<li>Claims can be requested for multiple environments (CI/CD capable)</li>
+<li>Developers can discover/learn via provided sandbox</li>
+</ul>
+<h2 id="implementation">Implementation</h2>
+<p>Primaza defines the following entities and controllers to provide the above described features.</p>
+<p>Entities: * <a href="./docs/entities/clusterenvironment.md">Cluster Environment</a>: represents an development environment on a kubernetes Cluster. * Service Binding * Service Claim * Service Catalog</p>
+<p>Controllers: * Discovery Controller * Claiming Controller * Binding Controller</p>
