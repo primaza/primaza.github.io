@@ -1,3 +1,3 @@
-# This is a test
+# This repository is deprecated
 
-Let's see if merge queues work the way I expect them to.
+Please see the [`docs/` directory in primaza's main repository](https://github.com/primaza/primaza/tree/main/docs/book).

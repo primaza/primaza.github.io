@@ -13,3 +13,8 @@ jobs:
       - name: Check commit ${{ github.sha }}
         run: |
           echo "Hello, world!"
+          echo "Thinking..."
+
+          sleep 30
+
+          echo "Done!"
