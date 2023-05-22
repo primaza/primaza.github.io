@@ -1,0 +1,15 @@
+name: CI demonstration
+
+on:
+  merge_group:
+  pull_request:
+
+jobs:
+  test:
+    name: Test merge queues
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check commit ${{ github.sha }}
+        run: |
+          echo "Hello, world!"
