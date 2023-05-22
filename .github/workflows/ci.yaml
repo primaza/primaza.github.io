@@ -17,3 +17,5 @@ jobs:
           sleep 30
 
           echo "Done!"
+
+          exit 1
