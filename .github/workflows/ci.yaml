@@ -17,4 +17,6 @@ jobs:
 
           sleep 30
 
-          echo "Done!"
+          echo "Failed!"
+
+          exit 1
